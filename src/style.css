@@ -1,0 +1,155 @@
+*{
+  /*box-sizing: border-box;*/
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+}
+
+.header{
+  background-image: url(./imagenes/COLORES.png);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+}
+
+.LOGO {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.LOGO img {
+  display: flex;
+  align-items: center;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+h2 {
+  margin: 5px;
+  font-size: xx-large;
+}
+
+p {
+  font-size: small;
+  text-align: center;
+}
+
+
+.main{
+  background-color: #000035;
+  display: flex;
+  margin-right: 0%;
+  width: 100%;
+  height: 900%;
+}
+
+.nav{
+  background-color: #7F0909;
+  width: 20%;
+  height: 300%;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+a {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+.principal{
+  background-color: #000035;
+  display: flex;
+  width: 100%;
+  height: 300%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: 100px;
+  width: 80%;
+  height: 900%;
+  padding: 20px;
+  background-color: #7F0909;
+  border: 3px;
+  border-color: goldenrod;
+}
+
+.cadaTarjeta {
+  background-color: #000000;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  height: 220px;
+  border: 3px solid goldenrod;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius: 15px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 24px;
+  padding: 10px 10px 0 10px;
+  color: goldenrod;
+}
+
+.cuerpo {
+  padding: 10px;
+}
+
+.cuerpo img{
+  max-width: 130px;
+  max-height: 150px;
+}
+
+.pie {
+  background: goldenrod;
+  border-radius: 0 0 15px 15px;
+  padding: 3px;
+  text-align: center;
+}
+
+.pie a {
+  text-decoration: none;
+  color: #000000;
+  font-size: smaller;
+}
+
+.pie a:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: ""
+}
+
+.cadaTarjeta:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.footer{
+  width: 100%;
+  height: 20px;
+  background-color: olivedrab;
+}
