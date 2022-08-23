@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image:url(./imagenes/castle.jpg);
+  background-repeat:round;
+  background-size:contain;
+}
+
+header {
+  background-image: url(./imagenes/COLORES.png);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: goldenrod;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.logo img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 140px;
+  max-height: 140px;
+}
+
+h1,h4 {
+  color: goldenrod;
+  font-family: sans-serif;
+  text-align: center;
+
+}
+
+nav{ /*etiqueta para delimitar el menu*/
+  background-color:#B20003;
+  padding: 10px;
+  position:relative;
+  top: 5px;
+  width:50mm;
+  height: 100mm;
+  float:left;
+  border-radius: 15px;
+  right: -5px;
+}
+
+.buttonmenu {
+    background-color:#B20003;
+    color:#DAA520;
+    padding:30px;
+    margin-top:25px;
+    margin-left: 20px;
+    border-color:#DAA520;
+    width:30mm;
+    height: 20mm;
+    border-radius: 1em 10%;
+    font-family:Arial;
+    font-size: 15px;
+
+}
+.buttonmenu:hover {
+    background-color:#7F0909;
+    }
+
+.footer {
+  width: 100%;
+  height: 20px;
+  background-color: #0B2B44;
+  float:inline-end
+}
+
+.harry-style{ /*etiqueta con la que damos estilo a las cajas de root*/
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.divStyle{
+  
+    /*display: grid;
+    grid-template-columns: repeat(7, 1fr);*/
+    background-color: #000000;
+    height: 150px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top:25px;
+    border: 2px solid goldenrod;
+    border-radius: 15px;
+  }
+  
