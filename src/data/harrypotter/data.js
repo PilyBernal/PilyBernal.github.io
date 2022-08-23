@@ -3,6 +3,7 @@ export default {
     {
       "id": 1,
       "name": "Euan Abercrombie",
+      //"img": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.postavy.cz%2Ffoto%2Fernie-macmillan-foto.jpg&imgrefurl=https%3A%2F%2Fwww.postavy.cz%2Feuan-abercrombie%2F&tbnid=vr2jXVHpVpsbkM&vet=12ahUKEwja97a27tv5AhVaxSkDHSZfA6EQMygZegQIARB7..i&docid=KN0MnMWGs7FTdM&w=200&h=200&q=Euan%20Abercrombie&ved=2ahUKEwja97a27tv5AhVaxSkDHSZfA6EQMygZegQIARB7",
       "birth": "between 1 September 1983 and 31 August 1984",
       "death": null,
       "species": "Human",
