@@ -1,13 +1,8 @@
-// estas funciones son de ejemplo/ Filtos
+// estas funciones son de ejemplo
 
-//export const generadorHTML = () => {
-
-function filtroCasa{
-  addEventListener
-}
-  //return 'home';
-  //console.log('home');
-//};
+export const example = () => {
+  return 'example';
+};
 
 export const anotherExample = () => {
   return 'OMG';
