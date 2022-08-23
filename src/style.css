@@ -39,11 +39,10 @@ header {
   max-height: 140px;
 }
 
-h1,h4 {
+h1,h4,h5 {
   color: goldenrod;
   font-family: sans-serif;
   text-align: center;
-
 }
 
 nav{ /*etiqueta para delimitar el menu*/
@@ -52,27 +51,44 @@ nav{ /*etiqueta para delimitar el menu*/
   position:relative;
   top: 5px;
   width:50mm;
-  height: 100mm;
+  height: 150mm;
   float:left;
   border-radius: 15px;
-  right: -5px;
+  right: -10px;
 }
 
 .buttonmenu {
     background-color:#B20003;
     color:#DAA520;
-    padding:30px;
+    padding: 5px;
     margin-top:25px;
     margin-left: 20px;
     border-color:#DAA520;
-    width:30mm;
-    height: 20mm;
-    border-radius: 1em 10%;
-    font-family:Arial;
-    font-size: 15px;
-
+    justify-content: center;
+    width:40mm;
+    height: 14mm;
+    border-radius:10%;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 14px;
+  }
+.buttonreset{
+  background-color:#DAA520;
+  color:black;
+  padding: 5px;
+  margin-top:40px;
+  margin-left: 35px;
+  border-color:black;
+  justify-content: center;
+  width:30mm;
+  height: 12mm;
+  border-radius:10%;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 14px;
 }
-.buttonmenu:hover {
+
+.buttonmenu:hover,.buttonreset:hover {
     background-color:#7F0909;
     }
 
@@ -89,9 +105,6 @@ nav{ /*etiqueta para delimitar el menu*/
 }
 
 .divStyle{
-  
-    /*display: grid;
-    grid-template-columns: repeat(7, 1fr);*/
     background-color: #000000;
     height: 150px;
     width: 100px;

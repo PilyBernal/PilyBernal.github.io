@@ -1,18 +1,39 @@
 import data from './data/harrypotter/data.js';//data de Harry Potter
- const root = document.getElementById('root')
- root.classList = 'harry-style'
+import { sortAZ, filterSpecies } from './data.js';
+// data
+const personajes = data.characters
+// Entrar a los nodos de DOM
+const root = document.getElementById('root')
+const specie = document.getElementById('specie')
 
-let personajes = data.characters
+root.classList = 'harry-style'
 
-const generadorHTML = (characters)=>{
+
+// Crear  HTML
+const generadorHTML = (characters) => {
     const div = document.createElement('div')
-    div.classList= 'divStyle'
+    div.classList = 'divStyle'
 
-    let titleName = document.createElement('h4') 
-    titleName.textContent=characters.name
+    const titleName = document.createElement('h4')
+    titleName.textContent = characters.name
 
-   div.append(titleName)
-   return div 
-   
-    }
-personajes.forEach(oneCharacters=>root.appendChild(generadorHTML(oneCharacters)))
+    let species = document.createElement('h5')
+    species.textContent = characters.species
+
+    let houses = document.createElement('h5')
+    houses.textContent = characters.house
+
+    let books = document.createElement('h5')
+    books.textContent = characters.books_featured_in
+    div.append(titleName, species, houses, books)
+    return div
+
+}
+personajes.forEach(oneCharacters => root.appendChild(generadorHTML(oneCharacters)))
+
+//Filtrar data
+specie.addEventListener('change',(e)=>{
+    console.log(filterSpecies(personajes, e.target.value));
+    
+})
+
