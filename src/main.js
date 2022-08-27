@@ -1,20 +1,10 @@
 import data from './data/harrypotter/data.js';//data de Harry Potter
- const root = document.getElementById('root')
+ let characters=data.characters;
+ let html=''
+ characters.forEach(unpersonaje=>{
+    html+=`<p>${unpersonaje.name}</p>`
+ })
 
-let personajes = data.characters
-console.log(personajes);
+ let root=document.getElementById('root');
 
-
-
-const generadorHTML = (characters)=>{
-    const div = document.createElement('div')
-    div.classList = 'harry-style'
-
-    let titleName = document.createElement('h2') 
-    titleName.textContent=characters.name
-
-   div.append(titleName)
-   return div 
-   
-    }
-personajes.forEach(oneCharacters=>root.appendChild(generadorHTML(oneCharacters)))
+ root.innerHTML=html;
