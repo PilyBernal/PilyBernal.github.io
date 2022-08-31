@@ -14,12 +14,11 @@
     <header class="header">
 
         <div class="LOGO">
-            <img src="./imagenes/scudosin fondo (1).png" alt="escudo">
+            <img src="./imagenes/ESCUDO.jpeg" alt="escudo">
         </div>
 
         <div class="nombrePágina">
-            <h1 class="nombrePágina">HARRY POTTER</h1>
-            <h4>para papás</h4>
+            <h2 class="nombrePágina">HARRY PARA PRINCIPIANTES</h2>
         </div>
 
     </header>
@@ -27,48 +26,43 @@
 
     <main>
 
-        <div class="menu">
+        <section class="menu">
 
-            <select class="nombre">
+            <button class="pPrincipales">PERSONAJES PRINCIPALES</button>
+
+            <p>FILTRAR POR</p>
+            <button>CASA</button>
+
+              <div class="casa">
+                <option>GRYFFINDOR</option>
+                <option>HUFFLEPUFF</option>
+                <option>RAVENCLAW</option>
+                <option>SLYTHERIN</option>
+              </div>
+
+            <p>ORDENAR POR</p>
+            <button>NOMBRE</button>
+
+              <div class="nombre">
                 <option>A-Z</option>
                 <option>Z-A</option>
-            </select>
+              </div>
 
-            <select class="casa">
-                <option>CASA: GRYFFINDOR</option>
-                <option>CASA: HUFFLEPUFF</option>
-                <option>CASA: RAVENCLAW</option>
-                <option>CASA: SLYTHERIN</option>
-            </select>
+              <button id="regresar">REGRESAR</button>
 
-            <select class="especie">
-                <option>HUMAN</option>
-                <option>PEACOCK</option>            </select>
+        </section>
 
-            <select class="libro">
-                <option>LIBRO: 1</option>
-                <option>LIBRO: 2</option>
-                <option>LIBRO: 3</option>
-                <option>LIBRO: 4</option>
-                <option>LIBRO: 5</option>
-                <option>LIBRO: 6</option>
-                <option>LIBRO: 7</option>
-            </select>
+        <section class="tarjetas">
 
-            <button>REGRESAR</button>
+            <div id="root" class="cards"></div>
 
-        </div>
-
-        <div class="principal">
-
-            <div id="root"></div>
-
-        </div>
-
-    </main-->
+        </section>
 
 
-    <footer class="footer">LABORATORIA MEX013 / Ana Daniela Andrade / Pilar Bernal</footer>
+    </main>
+
+
+    <footer class="footer">LABORATORIA MEX013 / Pilar Bernal / 2022</footer>
 
     <script src="main.js" type="module"></script>
 </body>

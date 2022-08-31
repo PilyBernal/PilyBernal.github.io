@@ -1,10 +1,26 @@
 import data from './data/harrypotter/data.js';//data de Harry Potter
- let characters=data.characters;
- let html=''
- characters.forEach(unpersonaje=>{
-    html+=`<p>${unpersonaje.name}</p>`
- })
 
- let root=document.getElementById('root');
+function createCards(arrData) {
+   let arrCards = []
+   arrData.forEach((item) => {
+      const div = document.createElement('div');
+      div.innerHTML = `<p>${item.name}</p>
+      <p>${item.house ? item.house : 'sin casa'}</p>`;
 
- root.innerHTML=html;
+      div.className = 'card'
+      arrCards.push(div)
+   })
+   return arrCards;
+}
+
+
+window.addEventListener('load', () => {
+   let characters = data.characters;
+
+   let root = document.getElementById('root');
+
+   createCards(characters).forEach((card)=>{
+      root.appendChild(card);
+   });
+
+})
