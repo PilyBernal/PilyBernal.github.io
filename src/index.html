@@ -31,14 +31,15 @@
             <button class="pPrincipales">PERSONAJES PRINCIPALES</button>
 
             <p>FILTRAR POR</p>
-            <button>CASA</button>
+            
 
-              <div class="casa">
-                <option>GRYFFINDOR</option>
-                <option>HUFFLEPUFF</option>
-                <option>RAVENCLAW</option>
-                <option>SLYTHERIN</option>
-              </div>
+              <select id="casa">
+                <option>CASA</option>
+                <option id="gryffindor" value="gryffindor">GRYFFINDOR</option>
+                <option id="hufflepuff" value="hufflepuff">HUFFLEPUFF</option>
+                <option id="ravenclaw" value="ravenclaw">RAVENCLAW</option>
+                <option id="slytherin" value="slytherin">SLYTHERIN</option>
+              </select>
 
             <p>ORDENAR POR</p>
             <button>NOMBRE</button>
@@ -54,7 +55,8 @@
 
         <section class="tarjetas">
 
-            <div id="root" class="cards"></div>
+            <div id="root" class="cards">
+            </div>
 
         </section>
 

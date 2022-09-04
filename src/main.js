@@ -4,8 +4,8 @@ function createCards(arrData) {
    let arrCards = []
    arrData.forEach((item) => {
       const div = document.createElement('div');
-      div.innerHTML = `<p>${item.name}</p>
-      <p>${item.house ? item.house : 'sin casa'}</p>`;
+      div.innerHTML = `<p>PERSONAJE: ${item.name}</p>
+      <p>CASA: ${item.house ? item.house : 'sin casa'}</p>`;
 
       div.className = 'card'
       arrCards.push(div)

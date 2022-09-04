@@ -78,14 +78,20 @@ main {
   color: #4B0607;
 }
 
-.casa, .nombre {
+/*.casa, .nombre {
   display: none;
-}
+}*/
 
 p {
   display: flex;
   justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
   color: #4B0607
+}
+
+.option{
+  background-color: #8D6E5C;
 }
 
 #regresar {
@@ -151,6 +157,7 @@ p {
 
 .card{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #F08A4B;
@@ -161,6 +168,11 @@ p {
   height: 100px;
 }
 
+.cards :hover {
+  /*box-shadow: 2px 2px 8px 4px #d3d3d3d1;*/
+  background-color: #D78A76;
+  color: #000000;
+}
 
 /*h4 {
         color: goldenrod;
