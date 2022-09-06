@@ -1,18 +1,56 @@
 import data from './data/harrypotter/data.js';//data de Harry Potter
- const root = document.getElementById('root')
- root.classList = 'harry-style'
+import {sortDataAZ} from './data.js';
+//import charactersOrdenadosAZ from './data.js/sortData';
 
-let personajes = data.characters
+const root=document.getElementById('root');
 
-const generadorHTML = (characters)=>{
-    const div = document.createElement('div')
-    div.classList= 'divStyle'
+let characters=data.characters;
 
-    let titleName = document.createElement('h4') 
-    titleName.textContent=characters.name
+let acumuladorHTML='';
 
-   div.append(titleName)
-   return div 
-   
-    }
-personajes.forEach(oneCharacters=>root.appendChild(generadorHTML(oneCharacters)))
+//Despliega todos los personajes
+//titulo =`<div class='titulo'><h1>${'PERRITOS'}</h1></div>`
+characters.forEach(personaje=>{
+    desplegar(personaje);
+})
+
+//Despliega
+function desplegar(personaje){
+        acumuladorHTML +=`<div class='contenedor'>
+        <h3>${personaje.name}</h3> <h5>${personaje.house  ? personaje.house : 'sin casa'}</h5>
+        </div>`
+        root.innerHTML=acumuladorHTML;
+} 
+
+//Limpia la interfaz antes de desplegar
+function limpiar(){
+   acumuladorHTML='';
+}
+
+console.log(sortDataAZ(characters));
+
+limpiar();
+
+/*sortDataAZ(characters).forEach(personaje=>{
+    desplegar(personaje);
+})*/
+
+//function opcionNombre(){
+   // let orden = document.getElementById('a-z');
+  
+   //if (orden='a-z'){
+
+    //orden.addEventListener('click'), 
+    
+    sortDataAZ(characters).forEach(personaje=>{
+        desplegar(personaje);
+});
+//} else{
+
+    //orden.addEventListener('click'), sortDataAZ.reverse(characters).forEach(personaje=>{
+        //desplegar(personaje);
+//});
+//}
+//}
+
+limpiar();   

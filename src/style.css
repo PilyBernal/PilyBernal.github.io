@@ -3,101 +3,154 @@
   padding: 0;
 }
 
+
 body {
+  background-color: #EECC8C;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   width: 100%;
-  height: 100%;
-  background-image:url(./imagenes/castle.jpg);
-  background-repeat:round;
-  background-size:contain;
+  height: 300%;
 }
+
 
 header {
-  background-image: url(./imagenes/COLORES.png);
+  background-color: #8D6E5C;
+  border: 3px solid #4B0607;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
-  width: 100%;
+  width: calc(100vw-30px);
   height: 100px;
+  margin: 15px;
+  border-radius: 15px;
 }
 
-.logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: goldenrod;
-  font-weight: 600;
+.LOGO {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.logo img {
+.LOGO img {
+  max-width: 130px;
+  max-height: 130px;
+  border-radius: 15px;
+  margin-top: 5px;
+  border-radius: 15px;
+  border: 3px solid #4B0607;
+}
+
+.nombrePágina {
+  color: #4B0607;
+}
+
+
+main {
+  display: flex;
+  background-image: url(./imagenes/mapa.jpeg);
+  width: 100%;
+  height: 300%;
+}
+
+.menu {
+  background-color: #8D6E5C;
+  border: 2px solid #4B0607;
+  color: #4B0607;
+  margin: 15px;
+  border-radius: 15px;
+  width: 15%;
+  max-height: 400px;
+  margin-top: 70px;
+}
+
+.menu>button{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #EECC8C;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  margin-left: 25px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 2px solid #4B0607;
+  color: #4B0607;
+}
+
+.casa, .nombre {
+  /*display: none;*/
+  display: flex;
+  justify-content: center;
+}
+
+.opcionCasa, .opcionNombre{
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #4B0607
+}
+
+select{
+  background-color: #EECC8C;
+  border: 2px solid #4B0607;
+  width: 150px;
+  height: 50px;
+  margin-top: 5px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+#regresar {
+  background-color: #D78A76
+}
+
+#root{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  color: #621708;
+}
+
+.contenedor{
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 140px;
-  max-height: 140px;
-}
-
-h1,h4 {
-  color: goldenrod;
-  font-family: sans-serif;
-  text-align: center;
-
-}
-
-nav{ /*etiqueta para delimitar el menu*/
-  background-color:#B20003;
-  padding: 10px;
-  position:relative;
-  top: 5px;
-  width:50mm;
-  height: 100mm;
-  float:left;
+  flex-direction: column;
+  width: 150px;
+  height: 90px;
+  background-color: #F08A4B;
+  border: 3px solid #4B0607;
   border-radius: 15px;
-  right: -5px;
+  margin: 10px;
 }
-
-.buttonmenu {
-    background-color:#B20003;
-    color:#DAA520;
-    padding:30px;
-    margin-top:25px;
-    margin-left: 20px;
-    border-color:#DAA520;
-    width:30mm;
-    height: 20mm;
-    border-radius: 1em 10%;
-    font-family:Arial;
-    font-size: 15px;
-
-}
-.buttonmenu:hover {
-    background-color:#7F0909;
-    }
-
-.footer {
-  width: 100%;
-  height: 20px;
-  background-color: #0B2B44;
-  float:inline-end
-}
-
-.harry-style{ /*etiqueta con la que damos estilo a las cajas de root*/
-  display:flex;
-  flex-wrap:wrap;
-}
-
-.divStyle{
   
-    /*display: grid;
-    grid-template-columns: repeat(7, 1fr);*/
-    background-color: #000000;
-    height: 150px;
-    width: 100px;
-    margin-left: 20px;
-    margin-top:25px;
-    border: 2px solid goldenrod;
-    border-radius: 15px;
-  }
-  
+.personajeConEstilo{
+  display: flex;
+  border-radius: 15px;
+}
+
+.contenedor :hover {
+  border: 3px solid #8D6E5C;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw-30px);
+  height: 50px;
+  margin: 15px;
+  background-color: #8D6E5C;
+  border: 2px solid #4B0607;
+  border-radius: 15px;
+  color: #4B0607;
+}

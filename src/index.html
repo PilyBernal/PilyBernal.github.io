@@ -2,39 +2,73 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Data Lovers/Harry Potter</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <title>Data Lovers/Harry Potter</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <header class="header">
-    <section>
-      <div class="logo">
-        <img src="./imagenes/scudosin fondo (1).png" alt="escudo">
-        <div class="nombre">
-          <h1 class="nombre">PENDIENTE</h1>
-          <p>Página para papás</p>
+
+    <header class="header">
+
+        <div class="LOGO">
+            <img src="./imagenes/ESCUDO.jpeg" alt="escudo">
         </div>
-    </section>
-  </header>
 
-  <nav class="menu">
-    <ul>
-      <button class="buttonmenu">Nombre</button><li class=" odd">
-      <button class="buttonmenu">Casa</button><li class=" odd">
-      <button class="buttonmenu">Género</button><li class=" odd">
-    </ul>
-  </nav>
+        <div class="nombrePágina">
+            <h2 class="nombrePágina">HARRY PARA PRINCIPIANTES</h2>
+        </div>
 
-  <main id="principal">
-    <div id="root"></div>
-  </main>  
+    </header>
 
-  <footer class="footer">Proyecto Laboratoria Daniela y Pilar</footer>
-  <script src="main.js" type="module"></script>
 
+    <main>
+
+        <section class="menu">
+
+            <button class="pPrincipales">PERSONAJES PRINCIPALES</button>
+
+            <p>FILTRAR POR</p>
+
+                <div class="casa">
+                    <select class="opcionCasa">
+                      <option id="casa" value="casa">CASA</option>
+                      <option id="gryffindor" value="gryffindor">GRYFFINDOR</option>
+                      <option id="hufflepuff" value="hufflepuff">HUFFLEPUFF</option>
+                      <option id="ravenclaw" value="ravenclaw">RAVENCLAW</option>
+                      <option id="slytherin" value="slytherin">SLYTHERIN</option>
+                    </select>
+                </div>
+
+            <p>ORDENAR POR</p>
+
+              <div class="nombre">
+                <select class="opcionNombre">
+                  <option id="nombre" value="nombre">NOMBRE</option>
+                  <option id="a-z" value="a-z">A-Z</option>
+                  <option id="z-a" value="z-a">Z-A</option>
+            </select>
+        </div>
+
+              <button id="regresar">REGRESAR</button>
+
+        </section>
+
+        <section class="personajeConEstilo">
+
+            <div id="root">
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer class="footer">LABORATORIA MEX013 / Pilar Bernal / 2022</footer>
+
+    <script src="main.js" type="module"></script>
 </body>
 
 </html>
