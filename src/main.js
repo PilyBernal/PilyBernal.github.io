@@ -1,26 +1,56 @@
 import data from './data/harrypotter/data.js';//data de Harry Potter
+import {sortDataAZ} from './data.js';
+//import charactersOrdenadosAZ from './data.js/sortData';
 
-function createCards(arrData) {
-   let arrCards = []
-   arrData.forEach((item) => {
-      const div = document.createElement('div');
-      div.innerHTML = `<p>PERSONAJE: ${item.name}</p>
-      <p>CASA: ${item.house ? item.house : 'sin casa'}</p>`;
+const root=document.getElementById('root');
 
-      div.className = 'card'
-      arrCards.push(div)
-   })
-   return arrCards;
+let characters=data.characters;
+
+let acumuladorHTML='';
+
+//Despliega todos los personajes
+//titulo =`<div class='titulo'><h1>${'PERRITOS'}</h1></div>`
+characters.forEach(personaje=>{
+    desplegar(personaje);
+})
+
+//Despliega
+function desplegar(personaje){
+        acumuladorHTML +=`<div class='contenedor'>
+        <h3>${personaje.name}</h3> <h5>${personaje.house  ? personaje.house : 'sin casa'}</h5>
+        </div>`
+        root.innerHTML=acumuladorHTML;
+} 
+
+//Limpia la interfaz antes de desplegar
+function limpiar(){
+   acumuladorHTML='';
 }
 
+console.log(sortDataAZ(characters));
 
-window.addEventListener('load', () => {
-   let characters = data.characters;
+limpiar();
 
-   let root = document.getElementById('root');
+/*sortDataAZ(characters).forEach(personaje=>{
+    desplegar(personaje);
+})*/
 
-   createCards(characters).forEach((card)=>{
-      root.appendChild(card);
-   });
+//function opcionNombre(){
+   // let orden = document.getElementById('a-z');
+  
+   //if (orden='a-z'){
 
-})
+    //orden.addEventListener('click'), 
+    
+    sortDataAZ(characters).forEach(personaje=>{
+        desplegar(personaje);
+});
+//} else{
+
+    //orden.addEventListener('click'), sortDataAZ.reverse(characters).forEach(personaje=>{
+        //desplegar(personaje);
+//});
+//}
+//}
+
+limpiar();   
