@@ -1,6 +1,10 @@
 import data from './data/harrypotter/data.js';//data de Harry Potter
 import {sortDataAZ} from './data.js';
-//import charactersOrdenadosAZ from './data.js/sortData';
+import {sortDataZA} from './data.js';
+import {filGry} from './data.js';
+import {filHuf} from './data.js';
+import {filRav} from './data.js';
+import {filSly} from './data.js';
 
 const root=document.getElementById('root');
 
@@ -9,10 +13,11 @@ let characters=data.characters;
 let acumuladorHTML='';
 
 //Despliega todos los personajes
-//titulo =`<div class='titulo'><h1>${'PERRITOS'}</h1></div>`
 characters.forEach(personaje=>{
     desplegar(personaje);
 })
+
+console.log(data)
 
 //Despliega
 function desplegar(personaje){
@@ -29,28 +34,56 @@ function limpiar(){
 
 console.log(sortDataAZ(characters));
 
-limpiar();
-
-/*sortDataAZ(characters).forEach(personaje=>{
-    desplegar(personaje);
-})*/
-
-//function opcionNombre(){
-   // let orden = document.getElementById('a-z');
-  
-   //if (orden='a-z'){
-
-    //orden.addEventListener('click'), 
-    
+let nombreAZ=document.getElementById('az')
+nombreAZ = document.querySelector('.nombre');
+nombreAZ.addEventListener('click', () => {
     sortDataAZ(characters).forEach(personaje=>{
         desplegar(personaje);
-});
-//} else{
+    })
+})
+    limpiar()
+    console.log(sortDataZA(characters));
 
-    //orden.addEventListener('click'), sortDataAZ.reverse(characters).forEach(personaje=>{
-        //desplegar(personaje);
-//});
-//}
-//}
+let nombreZA=document.getElementById('za')
+nombreZA = document.querySelector('.nombre');
+limpiar();
+nombreZA.addEventListener('click', () => {
+    sortDataZA(characters).forEach(personaje=>{
+        desplegar(personaje);
+    })
+})
 
-limpiar();   
+console.log(filGry(characters))
+
+let casaGry=document.getElementById('gryffindor')
+casaGry= document.querySelector('.casa');
+limpiar();
+casaGry.addEventListener('click', () => {
+    filGry(characters).forEach(personaje=>{
+        desplegar(personaje);
+    })
+})
+
+/*const nombreZA = document.querySelector('.nombre');
+    nombreZA.addEventListener('click', () => {
+        
+     sortDataZA(characters).forEach(personaje=>{
+        desplegar(personaje);
+    })
+    })*/
+
+    //console.log(filGry(characters));
+
+   /*limpiar();*/
+
+/*const casaGry= document.querySelector('.gryffindor');
+    casaGry.addEventListener('click', () => {
+        
+     filGry(characters).forEach(personaje=>{
+        desplegar(personaje);
+    })
+    })*/
+
+    console.log(filHuf(characters))
+    console.log(filRav(characters))
+    console.log(filSly(characters))

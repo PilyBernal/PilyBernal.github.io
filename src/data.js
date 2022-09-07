@@ -2,32 +2,36 @@
 
 //Ordena AZ
 export function sortDataAZ(characters){
-  let charactersOrdenadosAZ=characters.sort((a,b) => a.name > b.name ? 1 : -1)
+  let charactersOrdenadosAZr=characters.sort((a,b) => a.name > b.name ? 1 : -1)
+  let charactersOrdenadosAZ=charactersOrdenadosAZr
 return charactersOrdenadosAZ
 }
 
-//export function opcionNombre(characters){}
+//Ordena ZA
+export function sortDataZA(characters){
+  let charactersOrdenadosZA=characters.sort((a,b) => a.name > b.name ? -1 : 1)
+return charactersOrdenadosZA
+}
 
-//Despliega AZ
-/*charactersOrdenadosAZ.forEach(ordenadosAZ=>{
-  desplegar(ordenadosAZ);
-})*/
+//Filtro Gryffindor
+export function filGry(characters){
+  let gryffindor=characters.filter(personaje => personaje.house == 'Gryffindor')
+  return gryffindor
+}
 
 
-//limpiar();
+export function filHuf(characters){
+  let hufflepuff=characters.filter(personaje => personaje.house == 'Hufflepuff')
+  return hufflepuff
+}
 
-//Despliega ZA
-//titulo =`<div class='titulo'><h1>${'ORDENADOS DE Z-A'}</h1></div>`
-/*charactersOrdenadosAZ.reverse().forEach(ordenadosZA=>{
-    desplegar(ordenadosZA);
-  })*/
+export function filRav(characters){
+  let ravenclaw=characters.filter(personaje => personaje.house == 'Ravenclaw')
+  return ravenclaw
+}
 
-//limpiar() ; 
+export function filSly(characters){
+  let slytherin=characters.filter(personaje => personaje.house == 'Slytherin')
+  return slytherin
+}
   
-//Filtra los personajes por la casa Gryffindor
-/*let charactersFiltGry = characters.filter(personaje => personaje.house == 'gryffindor')*/
-
-//Despliega personajes de Gryffindor
-/*charactersFiltGry.forEach(gryffindor=>{
-    desplegar(gryffindor);
-  })*/
