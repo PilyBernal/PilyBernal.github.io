@@ -2,14 +2,13 @@
 
 //Ordena AZ
 export function sortDataAZ(characters){
-  let charactersOrdenadosAZr=characters.sort((a,b) => a.name > b.name ? 1 : -1)
-  let charactersOrdenadosAZ=charactersOrdenadosAZr
+  let charactersOrdenadosAZ=[...characters].sort((a,b) => a.name > b.name ? 1 : -1)
 return charactersOrdenadosAZ
 }
 
 //Ordena ZA
 export function sortDataZA(characters){
-  let charactersOrdenadosZA=characters.sort((a,b) => a.name > b.name ? -1 : 1)
+  let charactersOrdenadosZA=[...characters].sort((a,b) => a.name > b.name ? -1 : 1)
 return charactersOrdenadosZA
 }
 

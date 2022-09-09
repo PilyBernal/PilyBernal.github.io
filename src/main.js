@@ -19,6 +19,67 @@ characters.forEach(personaje=>{
 
 console.log(data)
 
+//*************
+//OH con Juli
+const selCasa = document.querySelector('#selecCasa');
+
+selCasa.addEventListener('change', (event) => {
+     console.log(event.target.value);
+
+     if(event.target.value=='GRYFFINDOR'){
+        limpiar();
+        filGry(characters).forEach(personaje=>{
+            desplegar(personaje);
+        })
+    }
+
+    if(event.target.value=='HUFFLEPUFF'){
+        limpiar();
+        filHuf(characters).forEach(personaje=>{
+            desplegar(personaje);
+        })
+    }
+
+    if(event.target.value=='RAVENCLAW'){
+        limpiar();
+        filRav(characters).forEach(personaje=>{
+            desplegar(personaje);
+        })
+    }
+
+    if(event.target.value=='SLYTHERIN'){
+        limpiar();
+        filSly(characters).forEach(personaje=>{
+            desplegar(personaje);
+        })
+    }
+
+});
+
+
+
+const selOrden = document.querySelector('#selecOrden');
+
+selOrden.addEventListener('change', (event) => {
+     //console.log(event.target.value);
+
+     if(event.target.value=='AZ'){
+        limpiar();
+        sortDataAZ(characters).forEach(personaje=>{
+            desplegar(personaje);
+        })
+    }
+
+    if(event.target.value=='ZA'){
+        limpiar();
+        sortDataZA(characters).forEach(personaje=>{
+            desplegar(personaje);
+        })
+    }
+
+});
+
+
 //Despliega
 function desplegar(personaje){
         acumuladorHTML +=`<div class='contenedor'>
@@ -32,58 +93,12 @@ function limpiar(){
    acumuladorHTML='';
 }
 
-console.log(sortDataAZ(characters));
 
-let nombreAZ=document.getElementById('az')
-nombreAZ = document.querySelector('.nombre');
-nombreAZ.addEventListener('click', () => {
-    sortDataAZ(characters).forEach(personaje=>{
-        desplegar(personaje);
-    })
-})
-    limpiar()
+    console.log(characters);
+    console.log(sortDataAZ(characters));
     console.log(sortDataZA(characters));
 
-let nombreZA=document.getElementById('za')
-nombreZA = document.querySelector('.nombre');
-limpiar();
-nombreZA.addEventListener('click', () => {
-    sortDataZA(characters).forEach(personaje=>{
-        desplegar(personaje);
-    })
-})
-
-console.log(filGry(characters))
-
-let casaGry=document.getElementById('gryffindor')
-casaGry= document.querySelector('.casa');
-limpiar();
-casaGry.addEventListener('click', () => {
-    filGry(characters).forEach(personaje=>{
-        desplegar(personaje);
-    })
-})
-
-/*const nombreZA = document.querySelector('.nombre');
-    nombreZA.addEventListener('click', () => {
-        
-     sortDataZA(characters).forEach(personaje=>{
-        desplegar(personaje);
-    })
-    })*/
-
-    //console.log(filGry(characters));
-
-   /*limpiar();*/
-
-/*const casaGry= document.querySelector('.gryffindor');
-    casaGry.addEventListener('click', () => {
-        
-     filGry(characters).forEach(personaje=>{
-        desplegar(personaje);
-    })
-    })*/
-
+    console.log(filGry(characters))
     console.log(filHuf(characters))
     console.log(filRav(characters))
     console.log(filSly(characters))
