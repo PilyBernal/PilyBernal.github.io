@@ -25,43 +25,51 @@
 
     <main>
 
-        <section class="menu">
+      <div class="botones">
 
-                <button class="pPrincipales">PERSONAJES PRINCIPALES</button>
+        <section class="menu1">
+                
+                <select id="selecConocer">
+                  <option class="conocer" id="conocer">MOSTRAR</option>
+                  <option class="personajes" id="personajes">PERSONAJES</option>
+                  <option class="curiosos" id="curiosos">D._CURIOSOS</option>
+                  <option class="hechizos" id="hechizos">HECHIZOS</option>
+                  <option class="pociones" id="pociones">POCIONES</option>
+                  <option class="libros" id="libros">LIBROS</option>
+                </select>           
 
-                <p>FILTRAR POR</p>
+            <p>FILTRAR PERSONAJES POR</p>
+                
+                <select id="selecCasa">
+                  <option class="casa" id="casa">CASA</option>
+                  <option class="gryffindor" id="gryffindor">GRYFFINDOR</option>
+                  <option class="hufflepuff" id="hufflepuff">HUFFLEPUFF</option>
+                  <option class="ravenclaw" id="ravenclaw">RAVENCLAW</option>
+                  <option class="slytherin" id="slytherin">SLYTHERIN</option>
+                </select>
 
-                <!--div class="casa"-->
-                    <select id="selecCasa">
-                      <option class="casa" id="casa">CASA</option>
-                      <option class="gryffindor" id="gryffindor">GRYFFINDOR</option>
-                      <option class="hufflepuff" id="hufflepuff">HUFFLEPUFF</option>
-                      <option class="ravenclaw" id="ravenclaw">RAVENCLAW</option>
-                      <option class="slytherin" id="slytherin">SLYTHERIN</option>
-                    </select>
-                <!--/div-->
+            <p>ORDENAR PERSONAJES POR</p>
 
-                <p>ORDENAR POR</p>
-
-                <!--div class="nombre"-->
-                    <select id="selecOrden">
-                       <option class="nombre" id="casa">NOMBRE</option>
-                       <option class="az" id="az">A-Z</option>
-                       <option class="za" id="za">Z-A</option>
-                    </select>
-                <!--/div-->
-
-                <button id="regresar">REGRESAR</button>
-
-        </section>
-
-        <section class="personajeConEstilo">
-
-            <div id="root"></div>
+                <select id="selecOrden">
+                  <option class="nombre" id="nombre">NOMBRE</option>
+                  <option class="az" id="az">A-Z</option>
+                  <option class="za" id="za">Z-A</option>
+                </select>
 
         </section>
 
+        <section class="menu2">
 
+            <button id="calculo">CÁLCULO</button>
+
+            <button id="regresar">REGRESAR</button>
+
+        </section>
+
+      </div>
+
+      <div id="root"></div>
+        
     </main>
 
 
