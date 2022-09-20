@@ -114,17 +114,6 @@ p {
   font-size: smaller;
 }
 
-/*select{
-  display: flex;
-  justify-content: center;
-  background-color: #EECC8C;
-  border: 2px solid #4B0607;
-  width: 150px;
-  height: 50px;
-  border-radius: 15px;
-  margin-bottom: 30px;
-}*/
-
 #regresar {
   display: flex;
   justify-content: center;
@@ -181,9 +170,11 @@ p {
   margin-bottom: 100px;
 }
 
-.contenedor, .contenedorLibro, .contenedorCalculo :hover {
+/*.contenedor, .contenedorLibro, .contenedorCalculo :hover {
+  .contenedor{
   border: 3px solid #4B0607;
-}
+  color: #000000;
+}*/
 
 
 footer {
