@@ -1,7 +1,6 @@
 import data from './data/harrypotter/data.js';//data de Harry Potter
 import { filterByProperty } from './data.js';
 import { sortDataAZ, sortDataZA } from './data.js';
-//import { humanos } from './data.js';
 
 const root = document.getElementById('root');
 
@@ -63,7 +62,6 @@ selConocer.addEventListener('change', (event) => {
 
 });
 
-
 //Despliega personajes
 function desplegar(personaje) {
     acumuladorHTML += `<div class='contenedor'>
@@ -109,8 +107,6 @@ const selectHouse = document.querySelector('#selectHouse');
 
 selectHouse.addEventListener('change', (event) => {
 
-    console.log(event.target.value);
-
     acumuladorHTML = ''
 
     filterByProperty(characters, 'house', event.target.value).forEach(personaje => {
@@ -120,32 +116,16 @@ selectHouse.addEventListener('change', (event) => {
 });
 
 //Porcentaje de personajes de la Especie: Humano
-//const selPorcentaje = document.getElementById('calculo');
 const calculo = document.querySelector('#calculo');
 
-calculo.addEventListener('click', (event) => {
+calculo.addEventListener('click', () => {
 
     acumuladorHTML = '';
-
-    console.log(event.target.id);
 
     let numHum = filterByProperty(characters, 'species', 'Human').length
     let porcentaje = (numHum * 100) / characters.length;
     desplegarCalculo(porcentaje)
 });
-
-
-/*selPorcentaje.addEventListener('click', (event) => {
-
-    if (event.target.id == 'calculo') {
-
-        acumuladorHTML = ''
-
-        let numHum = humanos(characters).length
-        let porcentaje = (numHum * 100) / characters.length;
-        desplegarCalculo(porcentaje)
-    }
-});*/
 
 //Despliega personajes con ordenamiento alfabético
 const selOrden = document.querySelector('#selecOrden');

@@ -170,13 +170,6 @@ p {
   margin-bottom: 100px;
 }
 
-/*.contenedor, .contenedorLibro, .contenedorCalculo :hover {
-  .contenedor{
-  border: 3px solid #4B0607;
-  color: #000000;
-}*/
-
-
 footer {
   display: flex;
   justify-content: center;

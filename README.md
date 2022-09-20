@@ -4,10 +4,9 @@
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Consideraciones generales](#3-consideraciones-generales)
-* [4. Criterios de aceptación del proyecto](#5-criterios-de-aceptación-del-proyecto)
-* [5. Diseño de la interfaz de usuario](#5-diseño-de-la-interfaz-de-usuario)
-* [6. Diseño final](#6-diseño-final)
+* [3. Criterios de aceptación del proyecto](#3-criterios-de-aceptación-del-proyecto)
+* [4. Diseño de la interfaz de usuario](#4-diseño-de-la-interfaz-de-usuario)
+* [5. Diseño final](#5-diseño-final)
 
 ***
 
@@ -45,16 +44,7 @@ Los datos que utilizamos son:
   [Harry Potter](https://harrypotter.fandom.com).
   * [Investigación con seguidoras de Harry Potter](src/data/harrypotter/README.md)
 
-## 3. Consideraciones generales
-
-* Este proyecto se debe resolver en duplas.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
-* Tiempo para completarlo: Toma como referencia 4 semanas.
-* En este proyecto aprenderás sobre "Historias de Usuario". Trabaja en una historia
-hasta _terminarla_ antes de pasar a la siguiente. Trabaja hasta la historia que puedas/quieras según el tiempo que te vaya tomando.
-
-## 4. Criterios de aceptación del proyecto
+## 3. Criterios de aceptación del proyecto
 
 Llamamos "Criterios de aceptación" a todas aquellas características que debe tener
 un proyecto para ser "aceptado" como válido. En este caso se consideran las Historias
@@ -158,7 +148,7 @@ Yo como usuario [visitante del sitio] quiero poder ver porcentaje de personajes.
 >* La página está publicada en Github Pages y es accesible mediante un enlace/link/liga.
 >* Se hacen pruebas de usabilidad con al menos 2 usuarias y se incorporan las mejoras identificadas en la versión.
 
-## 5. Diseño de la Interfaz de Usuario
+## 4. Diseño de la Interfaz de Usuario
 
 #### Prototipo de baja fidelidad
 
@@ -168,6 +158,6 @@ Yo como usuario [visitante del sitio] quiero poder ver porcentaje de personajes.
 
 ![Prototipo_alta](/src/imagenes/PROTOTIPO_ALTA.png)
 
-## 6. Diseño final
+## 5. Diseño final
 
 ![Producto_final](/src/imagenes/PRODUCTO_FINAL.png)

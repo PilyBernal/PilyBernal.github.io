@@ -102,14 +102,12 @@ describe('Function filterByProperty', () => {
 
 describe('ordenados', () => {
   it('comrueba que sortDataAZ es una función', () => {
-    console.log(typeof sortDataAZ)
     expect(typeof sortDataAZ).toBe('function');
   });
 });
 
 describe('ordenados', () => {
   it('comrueba que sortDataZA es una función', () => {
-    console.log(typeof sortDataZA)
     expect(typeof sortDataZA).toBe('function');
   });
 });
